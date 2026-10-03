@@ -29,8 +29,6 @@ age = int(input("Enter your age: "))
 
 # Condition to check if age is less than 18
 if age < 18:
-
-    # If age is less than 18, condition to check if it's negative
     if age < 0:
         print("Invalid age.")
     else:
@@ -101,7 +99,6 @@ match day:
 
 # if age >= 18:
 #     print("Grant access to the website.")
-# print("Program complete.")
 
 
 # age = int(input("Enter your age: "))
@@ -112,22 +109,70 @@ match day:
 #     print("Deny access.")
 
 
+# pass
+age=17
+if age >= 18:
+    pass
+else:
+    print("Deny access.")
 
 
-age = int(input("Enter your age: "))
+# age = 22
+# status = "Adult" if age >= 18 else "Minor"
+# print(status)
 
-# Condition to check if age is less than 18
-# if age < 18:
 
-#     # If age is less than 18, condition to check if it's negative
-#     if age < 0:
-#         print("Invalid age.")
-#     else:
-#         print("Deny access.")
+
+# per = int(input("Enter your per % : "))
+
+# if per >= 90:
+#     print("A++")
+# elif per >= 80:
+#     print("A")
+# elif per >= 70:
+#     print("B++")
+# elif per >= 60:
+#     print("B")
+# elif per >= 50:
+#     print("C")
 # else:
-#     print("Grant access.")
+#     print("Fail")
 
 
-age = 22
-status = "Adult" if age >= 18 else "Minor"
-print(status)
+# email="raj@gmail.com"
+# password="1234"
+# status="Block"
+
+# if email=="raj@gmail.com":
+#    if password=="1234":
+#        if status=="Unblock":
+#            print("Login success")
+#        else:
+#            print("Account is Block") 
+#    else:
+#        print("Login Failed due to Wrong Password")
+# else:
+#     print("Email dones not exist")
+
+
+
+
+#match   
+
+# day=input("Enter Today Day : ")
+# match day:
+#     case 'TUE':
+#         print("Today is Tuesday")
+#     case 'THU':
+#         print("Today is Thursday")
+#     case 'SAT':
+#         print("Today is Saturday")
+#     case _:
+#         print("Wrong Day")
+        
+# day=int(input("Enter Today Day No : "))
+# match day:
+#   case 1 | 2 | 3 | 4 | 5:
+#     print("Today is a weekday")
+#   case 6 | 7:
+#     print("I love weekends!") 
