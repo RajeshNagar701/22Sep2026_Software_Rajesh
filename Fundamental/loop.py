@@ -29,20 +29,18 @@ values = range(1, 5)
 
 #1) While
 
-#i = 1
-#while i < 6:
-#  print(i)
-#  i += 1
-    
-
+# i=1
+# while i<=100:
+#     print(i)
+#     i+=1
 
 #2) For in
 
 # models = ["Fable", "ChatGPT", "Gemini"]
 
-# Access items of the list one by one
-# for model in models:
-#     print(model)
+# # Access items of the list one by one
+# for data in models:
+#     print(data)
 #     print("---")
 
 
@@ -50,18 +48,10 @@ values = range(1, 5)
 # for i in range(1, 11):
 #     print(f"Displaying product {i}")    
 
+#if we want in reverse 100 to 1
 
-# language = 'Python'
-
-# for x in language:
-#     print(x)
-
-
-# if we want in reverse 100 to 1
-#for i in range(100, 1,-1):
+# for i in range(100,1,-1):
 #    print(i) 
-
-
 
 
 # Break & Continue
@@ -73,17 +63,23 @@ values = range(1, 5)
 
 
 # The continue Statement
-
-# for num in range(1, 6):
-#     if num == 3:
+# for num in range(1, 10):
+#    if num == 5 or num==8:
 #         continue
 #     print(num)
+
+
+# language = 'Python'
+# for x in language:
+#     print(x)
+
+
 
 # Python pass Statement
 # In Python, pass is a null statement and it does nothing when executed. 
 # Despite not doing anything, pass does have a purpose.
 
-# is_valid = True
+# is_valid = False
 # if is_valid:
 #     pass # in {} body we have add some code if not then gives error so we add PASS
 # else:
@@ -108,12 +104,10 @@ iterator protocol, which consist of the methods __iter__() and __next__().
 Lists, tuples, dictionaries, and sets are all iterable objects. 
 They are iterable containers which you can get an iterator from.
 
-
 """
 
-mytuple = ("apple", "banana", "cherry")
-myit = iter(mytuple)
-
+mylist = ["apple", "banana", "cherry"]
+myit = iter(mylist)
 print(next(myit))
 print(next(myit))
 print(next(myit))
