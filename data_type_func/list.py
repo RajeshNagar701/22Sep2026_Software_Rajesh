@@ -4,10 +4,12 @@ Python has several data types that let us group items together.
 
 Here's why lists fit this use case:
 
-Lists allow us to add, remove and change items. A shopping cart can change.
+Lists allow us to add, remove and change items. 
+A shopping cart can change.
 Items in a list are ordered. A shopping cart shows items in the order they are added.
-Lists allow duplicate values (might not be relevant for a shopping cart, though).
+Lists allow duplicate values 
 
+            0         1      2
 cart = ["T-shirt", "Lamp", "Pen"]  #list
 print(cart)
 
@@ -17,14 +19,17 @@ print(my_list)
 my_list = []  # Empty list
 print(my_list)
 
-
 Python List Methods
 
 append()	Adds an item to the end of the list
-remove()	Removes the specified value from the list
 pop()	    Returns and removes the last item or item at the given index
-clear() 	Removes all items from the list
+
 insert()	Inserts an item at the specified index
+remove()	Removes the specified value from the list
+
+clear() 	Removes all items from the list
+del(2)      Remove specific index list value
+del         remove list variable
 
 extend()	Adds all the items from another list (or any other iterable)
 index()	    Returns the index of the first matched item
@@ -68,23 +73,23 @@ Built-in functions such as enumerate(), len(), max(), min(), sorted() etc.
 
 #Remove Items From a List remove() , pop() , clear()  del
 
-cart = ["T-shirt", "Lamp", "Pen", "Book"]
+# cart = ["T-shirt", "Lamp", "Pen", "Book"]
 
 # Remove "Pen" from the list
-cart.remove("Pen")              # ['T-shirt', 'Lamp', 'Book']
+# cart.remove("Pen")              # ['T-shirt', 'Lamp', 'Book']
 
-last_item = cart.pop()          # Remove the last item
-print(cart)                     # ['T-shirt', 'Lamp']
-print(last_item)                # Book
+# last_item = cart.pop()          # Remove the last item
+# print(cart)                     # ['T-shirt', 'Lamp']
+# print(last_item)                # Book
 
-cart.clear()                    # Clear the list
-print(cart)                     # []
+# cart.clear()                    # Clear the list
+# print(cart)                     # []
 
-del cart[2]                     # Delete the third item (index 2)
-print(cart)                     # ['T-shirt', 'Lamp', 'Book']
+# del cart[2]                     # Delete the third item (index 2)
+# print(cart)                     # ['T-shirt', 'Lamp', 'Book']
 
-del cart                        # Delete the list itself
-print(cart)                     # NameError: name 'cart' is not defined
+# del cart                        # Delete the list itself
+# print(cart)                     # NameError: name 'cart' is not defined
 
 
 #Copying a List
@@ -107,7 +112,11 @@ print(f"cart = {cart}")                       #cart = ['T-shirt', 'Lamp', 'Pen']
 
 
 #loop list
-# cart_items = ["T-shirt", "Lamp", "Pen"]
-# for item in cart_items:
-#     print(item)
+cart_items = ["T-shirt", "Lamp", "Pen","Pencil"]
+print(cart_items[0])
+
+for value in cart_items:
+    print(value)
+
+
 

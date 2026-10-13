@@ -1,5 +1,5 @@
 """
-Create a Set in Python
+Create a Set in Python  
 In Python, we create sets by placing all the elements inside curly braces {}, 
 separated by commas.
 

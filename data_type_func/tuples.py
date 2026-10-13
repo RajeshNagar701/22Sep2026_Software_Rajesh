@@ -26,16 +26,17 @@ my_tuple = ("mouse", [8, 4, 6], (1, 2, 3))
 
 # tuple can be created without parentheses ()
 # also called tuple packing
-my_tuple = 3, 4.6, "dog"   #withaout ()
+my_tuple = 3, 4.6, "dog"         #withaout ()
 
 a, b, c = my_tuple  # tuple unpacking is also possible
+
 
 Diference between list vs Tuple
 
 Key points to remember:
 The literal syntax of tuples: parentheses () whereas the lists: square brackets [] .
-Lists has variable length, tuple has fixed length.
-List has mutable nature, tuple has immutable nature.
+Lists has variable(flexible) length    | tuple has fixed length.
+List has mutable nature(we can change) |     tuple has immutable nature( can't change ).
 List has more functionality than the tuple.
 
 '''
