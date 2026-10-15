@@ -13,11 +13,15 @@ Lists allow duplicate values
 cart = ["T-shirt", "Lamp", "Pen"]  #list
 print(cart)
 
+
+
 my_list = [1, "Python", 3.14] # A list of mixed data types
 print(my_list)
 
+
 my_list = []  # Empty list
 print(my_list)
+
 
 Python List Methods
 
@@ -39,6 +43,7 @@ reverse()	Reverses the list
 copy()	    Returns the shallow copy of a list
 
 Built-in functions such as enumerate(), len(), max(), min(), sorted() etc. 
+
 '''
 
 
@@ -56,12 +61,14 @@ Built-in functions such as enumerate(), len(), max(), min(), sorted() etc.
 # print(cart)    # ['T-shirt', 'Shoes', 'Pen']
 
 
+
 # cart.append("Book") # Add "Book" to the end of the list
 # print(cart)    # ['T-shirt', 'Lamp', 'Pen', 'Book']
 
 
 # cart = ["T-shirt", "Lamp", "Pen"]
 # fav_items = ["Headphones", "Phone"]
+
 # cart.extend(fav_items) # Add all the items from fav_items to cart
 # print(cart)    # ['T-shirt', 'Lamp', 'Pen', 'Headphones', 'Phone']
 
@@ -70,8 +77,10 @@ Built-in functions such as enumerate(), len(), max(), min(), sorted() etc.
 # cart.insert(2, "Book")  # Add "Book" at index 2 (3rd position)
 # print(cart)             # ['T-shirt', 'Lamp', 'Book', 'Pen']
 
+#===============================================================
 
-#Remove Items From a List remove() , pop() , clear()  del
+
+#Remove Items From a List  pop(), remove() , , clear()  del
 
 # cart = ["T-shirt", "Lamp", "Pen", "Book"]
 
@@ -93,17 +102,21 @@ Built-in functions such as enumerate(), len(), max(), min(), sorted() etc.
 
 
 #Copying a List
-'''
-
-favorite_items = ["T-shirt", "Lamp", "Pen"]
-cart = favorite_items.copy()        # Copying a list
-favorite_items.append("Book")       # Add an item to favorite_items list
-print(f"favorite_items = {favorite_items}")   #favorite_items = ['T-shirt', 'Lamp', 'Pen', 'Book']
-print(f"cart = {cart}")                       #cart = ['T-shirt', 'Lamp', 'Pen']
 
 '''
 
+list_1 = ["T-shirt", "Lamp", "Pen"]
+list_2 = list_1.copy()    # Copying a list    list_2=list_1
 
+
+list_1.append("Book")       # Add an item to favorite_items list
+print(list_1)               #list_1 = ['T-shirt', 'Lamp', 'Pen', 'Book']
+print(list_2)               #list_2 = ['T-shirt', 'Lamp', 'Pen']
+
+'''
+
+
+# we canvert string to list 
 
 # vowels = "aeiou"
 # vowels_list = list(vowels)  # Convert a string to a list
@@ -111,11 +124,15 @@ print(f"cart = {cart}")                       #cart = ['T-shirt', 'Lamp', 'Pen']
 
 
 
-#loop list
-cart_items = ["T-shirt", "Lamp", "Pen","Pencil"]
-print(cart_items[0])
+#Iterating Through a list
 
-for value in cart_items:
+list_1 = ["T-shirt", "Lamp", "Pen"]
+
+print(list_1[0])
+print(list_1[1])
+print(list_1[2])
+
+for value in list_1:
     print(value)
 
 

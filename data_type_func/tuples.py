@@ -13,7 +13,7 @@ not Deleting a Tuple   but  list can
 numbers = ()                # Empty tuple
 print(numbers)
 
-odd_nums = (1, 3, 5, 7)         # Tuple having data of the same type
+odd_nums = (1, 3, 5, 7)     # Tuple having data of the same type
 print(odd_nums)
 
 details = (111, "2026-08-09", "California") # Tuple having mixed data types
@@ -26,7 +26,8 @@ my_tuple = ("mouse", [8, 4, 6], (1, 2, 3))
 
 # tuple can be created without parentheses ()
 # also called tuple packing
-my_tuple = 3, 4.6, "dog"         #withaout ()
+
+my_tuple =   3, 4.6, "dog"          #withaout ()
 
 a, b, c = my_tuple  # tuple unpacking is also possible
 
@@ -34,9 +35,11 @@ a, b, c = my_tuple  # tuple unpacking is also possible
 Diference between list vs Tuple
 
 Key points to remember:
-The literal syntax of tuples: parentheses () whereas the lists: square brackets [] .
-Lists has variable(flexible) length    | tuple has fixed length.
-List has mutable nature(we can change) |     tuple has immutable nature( can't change ).
+
+syntax: parentheses ()         |       square brackets [] .
+variable(flexible) length      |       tuple has fixed length.
+mutable nature(we can change)  |       tuple has immutable nature( can't change ).
+
 List has more functionality than the tuple.
 
 '''
@@ -45,7 +48,7 @@ List has more functionality than the tuple.
 # print(my_tuple[4])
 
 # n_tuple = ("mouse", [8, 4, 6], (1, 2, 3))
-# print(n_tuple[1][1])  # nested index 's'
+# print(n_tuple[1][1])     # nested index '4'
 
 
 
@@ -54,14 +57,15 @@ List has more functionality than the tuple.
 # We can access a range of items in a tuple by using the slicing operator (colon).
 
 # my_tuple = ('p','r','o','g','r','a','m','i','z')
+
+
 # print(my_tuple[1:4])  # elements 2nd to 4th ('r', 'o', 'g')
 # print(my_tuple[:-7])  # elements beginning to 2nd  ('p', 'r')
 # print(my_tuple[7:])   # elements 8th to end ('i', 'z')
 # print(my_tuple[:])    # elements beginning to end ('p', 'r', 'o', 'g', 'r', 'a', 'm', 'i', 'z')
 
-
-#Changing or Deleting a Tuple
-#Unlike lists, tuples are immutable : we can not change 
+# Changing or Deleting a Tuple
+# Unlike lists, tuples are immutable : we can not change 
 # tuples can be reassigned
 
 
@@ -69,7 +73,8 @@ List has more functionality than the tuple.
 # print((1, 2, 3) + (4, 5, 6)) #(1, 2, 3, 4, 5, 6)
 # print(("Repeat",) * 3) #('Repeat', 'Repeat', 'Repeat')
 
-#We cannot delete or remove items from a tuple. But deleting the tuple entirely is possible using the keyword del
+#We cannot delete or remove items from a tuple. 
+#But deleting the tuple entirely is possible using the keyword del
 
 # my_tuple = ('p','r','o','g','r','a','m','i','z')
 # del my_tuple
@@ -116,7 +121,7 @@ my_tuple = ('a','p','p','l','e',)
 # min()	    Return the smallest item in the tuple
 # sorted()	Take elements in the tuple and return a new sorted list (does not sort the tuple itself).
 # sum()	    Retrun the sum of all elements in the tuple.
-# tuple()	    Convert an iterable (list, string, set, dictionary) to a tuple.
+# tuple()	Convert an iterable (list, string, set, dictionary) to a tuple.
 
 
 
@@ -132,3 +137,15 @@ my_tuple = ('a','p','p','l','e',)
 
 t1=23,23,56
 print(type(t1))  # output : <class 'tuple'>
+
+
+
+
+# numbers = [5, 2, 8, 1p]
+# # sorted([5, 2, 8, 1])             # [1, 2, 5, 8]
+
+# words = ["apple", "fig", "banana"]
+# sorted(words, key=len)  # Returns ['fig', 'apple', 'banana']
+
+
+# difference between in method list.count  &  function () => len(list)  
