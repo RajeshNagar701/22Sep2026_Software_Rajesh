@@ -13,8 +13,6 @@ print(country.get('Germany'))  # Output: Berlin   by get() method
 
 {'Germany': 'Berlin', 'Canada': 'Ottawa', 'England': 'London'}
 
-
-
 Valid and Invalid Dictionaries
 
 # valid dictionary
@@ -27,8 +25,7 @@ my_dict = {"USA": ["Chicago", "California", "New York"]}   # string as a key, li
 my_dict = {1: "Hello", [1, 2]: "Hello Hi"}                 # Error: using a list as a key is not allowed
 
 
-
-# dictionary must be unique  
+# Note : dictionary must be unique  
 
 hogwarts_houses = {
     "Harry Potter": "Gryffindor",
@@ -39,8 +36,6 @@ hogwarts_houses = {
 # If there are duplicate keys, the later value of the key overwrites the previous value.
 output : {'Harry Potter': 'Slytherin', 'Hermione Granger': 'Gryffindor'}
 
-
-
 """
 
 # country = {
@@ -48,6 +43,7 @@ output : {'Harry Potter': 'Slytherin', 'Hermione Granger': 'Gryffindor'}
 #   "Canada": "Ottawa", 
 #   "England": "London"
 # }
+
 # print(country["Germany"])    # Output: Berlin
 # print(country.get('Germany'))  # Output: Berlin   by get() method
 

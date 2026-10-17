@@ -1,7 +1,9 @@
 """
+[] () {1 ,'str' ,10.5 }
+
 Create a Set in Python  
 In Python, we create sets by placing all the elements inside curly braces {}, 
-separated by commas.
+separated by commas. Note : duplicate value not work
 
 A set can have any number of items and they may be of different 
 types (integer, float, tuple, string, etc.).
@@ -9,19 +11,15 @@ types (integer, float, tuple, string, etc.).
 # create a set of integer type
 student_id = {112, 114, 116, 118, 115}
 
-
 # create a set of string type
 vowel_letters = {'a', 'e', 'i', 'o', 'u'}
-
 
 # create a set of mixed data types
 mixed_set = {'Hello', 101, -2, 'Bye'}
 
-
 Create an Empty Set in Python
-
 # create an empty set
-empty_set = set()
+empty_set = set() 
 
 # create an empty dictionary
 empty_dictionary = { }
@@ -38,13 +36,14 @@ empty_dictionary = { }
 
 # Iterate Over a Set in Python
 
-# for fruit in fruits: 
-#     print(fruit)
+# student_id = {112, 114, 116, 118, 115}
+# for data in student_id: 
+#     print(data)
 
 
 # Duplicate Items in a Set  // can not contain duplicates.
 
-# numbers = {2, 4, 6, 6, 2, 8}
+# numbers = {2, 4, 6, 6, 2, 8,8}
 # print(numbers)   # {8, 2, 4, 6}
 
 
@@ -64,15 +63,12 @@ empty_dictionary = { }
 # print(companies)  # Output: {'google', 'apple', 'Lacoste', 'Ralph Lauren'}
 
 
-# using discard() method
+# using discard() / remove() / pop() method
+# note : if value not exist then remove gives error & discard not 
 
 # languages = {'Swift', 'Java', 'Python'}
 # removedValue = languages.discard('Java')  # remove 'Java' from a set
 # print(languages)    # {'Python', 'Swift'} 
-
-
-
-
 
 # Built-in Functions with Set
 
@@ -113,11 +109,14 @@ empty_dictionary = { }
 
 
 # Python Set Operations 
-# union: |  , 
-# Intersection : &  , 
-# difference : - , 
-# symmetric_difference : ^
+# union: |  ,               All unique elements from both sets.
+# Intersection : &  ,       Only elements present in both sets.
+# difference : - ,          Elements in a that are not in b
+# symmetric_difference : ^  Elements in either set, but not both
 
 
+# Defining two sample sets
+A = {1, 2, 3, 4 }
+B = {3, 4, 5, 6 }
 print('Union using |:', A | B)
 print('Union using union():', A.union(B))     
