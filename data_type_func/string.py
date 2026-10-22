@@ -5,17 +5,17 @@
 # message=" Hi how are yoy "
 # print(message)
 
-
-
 # Multiline string
 # message = """To avoid pain, they avoid pleasure.
 # To avoid death, they avoid life."""
 # print(message)
 
 """
+
 String:     P  y  t  h  o  n 
 Index:      0  1  2  3  4  5 
 Negative:  -6 -5 -4 -3 -2 -1 
+
 """
 
 
@@ -25,7 +25,9 @@ Negative:  -6 -5 -4 -3 -2 -1
 # model = 'ChatGPT'
 # print(model[0])    # Output: C # Access the first character
 # print(model[-1])   # Output: T  # Access the last character
-# print(model[0:4])   # Output: Chat
+# print(model[0:4])   # Output: Chat  start wity 0 to 4 no of char
+
+
 
 # Strings are Immutable  can't change
 
@@ -39,9 +41,6 @@ Negative:  -6 -5 -4 -3 -2 -1
 
 # model = model + " " + version
 # print(model)    # Opus 5
-
-
-
 
 
 
@@ -82,14 +81,22 @@ Negative:  -6 -5 -4 -3 -2 -1
 
 # text = "ChatGPT is great."
 # new_text = text.replace("ChatGPT", "Claude")
-# print(new_text)  # Output: Claude is great.
+# print(new_text)      # Output: Claude is great.
 
 # print('Chat' in 'ChatGPT')        # True
 # print('Claude' not in 'ChatGPT')  # True
 
 
+
+
 # Extra Function : 
 # upper() , lower() , capitalize(),  title() , strip() , find() , count()
+
+name="NAGAR"
+print(name.lower())
+print(name.upper())
+print(name.capitalize())
+
 
 
 
@@ -118,6 +125,6 @@ Negative:  -6 -5 -4 -3 -2 -1
 
 # String Formatting (f-Strings)
 
-company = 'Google'
-field = 'AI'
-print(f"hello {company}  hello  {field}")
+# company = 'Google'
+# field = 'AI'
+# print(f"hello {company}  hello  {field}")

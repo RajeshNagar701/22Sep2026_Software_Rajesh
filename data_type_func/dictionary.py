@@ -2,6 +2,20 @@
 
 create a dictionary by placing key: value pairs inside curly brackets {}
 
+students={1,'RAJ NAGAR','raj@gmail.com','abc@123','123654789'}
+
+students={id:1,name:'RAJ NAGAR',email:'raj@gmail.com',password:'abc@123',mobile:'123654789'},
+print(students["name"])   => output : RAJ NAGAR
+
+student1=[
+          {id:1,name:'RAJ NAGAR',email:'raj@gmail.com',password:'abc@123',mobile:'123654789'},
+          {id:2,name:'Akash NAGAR',email:'Akash@gmail.com',password:'abc@123',mobile:'123654789'},
+          {id:3,name:'nirav NAGAR',email:'nirav@gmail.com',password:'abc@123',mobile:'123654789'}
+        ]
+
+student1[1][name]
+
+
 country = {
   "Germany": "Berlin", 
   "Canada": "Ottawa", 
@@ -11,7 +25,9 @@ country = {
 print(country["Germany"])    # Output: Berlin
 print(country.get('Germany'))  # Output: Berlin   by get() method
 
+
 {'Germany': 'Berlin', 'Canada': 'Ottawa', 'England': 'London'}
+
 
 Valid and Invalid Dictionaries
 
@@ -26,6 +42,8 @@ my_dict = {1: "Hello", [1, 2]: "Hello Hi"}                 # Error: using a list
 
 
 # Note : dictionary must be unique  
+============================================================
+
 
 hogwarts_houses = {
     "Harry Potter": "Gryffindor",
@@ -109,6 +127,28 @@ output : {'Harry Potter': 'Slytherin', 'Hermione Granger': 'Gryffindor'}
 # copy()	  Returns a copy of the dictionary.
 
 
+
+students={'id':1,'name':'Nagar','email':'raj@gmail.com','password':'abc@123','mobile':'123654789'}
+print(students.keys())   # list format all keys
+print(students.values())  # list format all value
+
+for key in students:
+  print(students[key])
+
+users = [
+    {"name": "Alice", "role": "Admin", "status": "Active"},
+    {"name": "Bob", "role": "Developer", "status": "Inactive"},
+    {"name": "Charlie", "role": "Designer", "status": "Active"}
+]
+
+for user in users:
+  #print(user)
+  #print(user['name'])
+  print(f"{user['name']} is a {user['role']} and is currently {user['status']}.")
+  
+  
+  
+  
 # Dictionary Membership Test : # use of in and not in operators
 
 # file_types = {
