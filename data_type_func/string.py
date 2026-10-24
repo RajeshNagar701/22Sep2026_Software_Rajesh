@@ -98,8 +98,6 @@ print(name.upper())
 print(name.capitalize())
 
 
-
-
 # Iterate Through a String
 
 # model = 'Opus'
