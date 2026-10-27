@@ -3,19 +3,18 @@ Python Variable Scope
 
 In Python, we can declare variables in three different scopes: 
 
-Local Variables
+Local Variables    :
 Global Variables
 Nonlocal Variables
 
 """
 
-# declare global variable
+#declare global variable
 # message = 'Hello'
 
 # def greet():
 #     # declare local variable
 #     print('Local', message)
-
 # greet()
 # print('Global', message)
 
@@ -41,11 +40,12 @@ def outer():
         message = 'nonlocal'  
         print("inner:", message)
     inner()
+    
     print("outer:", message)
 
 outer()
 
-
+print("outer:", message)
 
 # inner: nonlocal
 # outer: nonlocal

@@ -74,8 +74,10 @@ greet()
 
 # 6) *args:  Python Function With Arbitrary Arguments
 
-#Sometimes, we do not know in advance the number of arguments that will 
-#be passed into a function. To handle this kind of situation, we can use arbitrary arguments in Python.
+
+# Sometimes, we do not know in advance the number of arguments that will 
+# be passed into a function. 
+# To handle this kind of situation, we can use arbitrary arguments in Python.
 
 # def find_sum(*numbers):
 #     result = 0    
@@ -91,9 +93,6 @@ greet()
 # **kwargs  :  **kwargs allows multiple keyword arguments.
 
 
-
-
-
 """
 7) Python Recursive Function
 
@@ -102,20 +101,18 @@ It is even possible for the function to call itself.
 These types of construct are termed as recursive functions.
 
 """
-
-# def factorial(x):
-#     """This is a recursive function
-#     to find the factorial of an integer"""
-#     if x == 1:
-#         return 1
-#     else:
-#         return (x * factorial(x-1))
-
-# num = 3
-# print("The factorial of", num, "is", factorial(num))
+# 5*4*3*2*1   
+def factorial(x):
+    if x == 1:
+        return 1
+    else:
+        return (x * factorial(x-1))
+num = 5 
+print("The factorial of", num, "is", factorial(num))
 
 
 """
+8) lambda 
 
 lambda function is a small, anonymous (unnamed) function that can take 
 any number of arguments but can only have one single expression. 
@@ -130,9 +127,19 @@ higher-order functions like map(), filter(), or sorted()
 """
 
 # A lambda function that adds 10 to an argument
-add_ten = lambda x: x + 10
-print(add_ten(5))  # Output: 15
 
-# A lambda function with multiple arguments
-multiply = lambda a, b: a * b
-print(multiply(5, 6))  # Output: 30
+def sum(x):
+    print(x+5)
+    print(x*15)
+sum(5)    
+
+sum=lambda : 5+5
+print(sum())
+
+
+# # A lambda function with multiple arguments
+# multiply = lambda a, b: a * b
+# print(multiply(5, 6))  # Output: 30
+
+
+#=============================================================
