@@ -10,21 +10,23 @@ of how your class works.
 
 
 Private Properties
-In Python, you can make properties private by using a double underscore __ prefix:
+In Python, you can make properties private by using a double underscore 
+
+__ prefix:  example : __age  : now we can't access out of class 
 
 """
 
 
-Create a private class property named __age:
+#Create a private class property named __age:
 
-class Person:
-  def __init__(self, name, age):
-    self.name = name
-    self.__age = age # Private property
+# class Person:
+#   def __init__(self, name, age):
+#     self.name = name
+#     self.__age = age # Private property
 
-p1 = Person("Emil", 25)
-print(p1.name)
-print(p1.__age) # This will cause an error
+# p1 = Person("Emil", 25)
+# print(p1.name)
+# print(p1.__age) # This will cause an error
 
 # Note: Private properties cannot be accessed directly from outside the class.
 
@@ -32,7 +34,6 @@ print(p1.__age) # This will cause an error
 # Get Private Property Value
 #Use a getter method to access a private property:
 
-"""
 class Person:
   def __init__(self, name, age):
     self.name = name
@@ -43,4 +44,4 @@ class Person:
 
 p1 = Person("Tobias", 25)
 print(p1.get_age())
-"""
+print(p1.__age) # we can't access protected variable out of class

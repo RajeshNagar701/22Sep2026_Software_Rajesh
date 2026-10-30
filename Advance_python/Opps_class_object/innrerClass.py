@@ -11,22 +11,21 @@ making your code more organized.
 
 """
 
-class Outer:
-  def __init__(self):
-    self.name = "Emil"
+# class Outer:
+#   def __init__(self):
+#     self.name = "Emil"
 
-  class Inner:
-    def __init__(self, outer):
-      self.outer = outer
+#   class Inner:
+#     def __init__(self, outer):
+#       self.outer = outer
 
-    def display(self):
-      print(f"Outer class name: {self.outer.name}")
+#     def display(self):
+#       print(f"Outer class name: {self.outer.name}")
 
-outer = Outer()
-inner = outer.Inner(outer)
-inner.display()
+# outer = Outer()
+# inner = outer.Inner(outer)
+# inner.display()
 
-"""
 #Multiple Inner Classes
 
 class Computer:
@@ -47,4 +46,3 @@ computer.cpu.process()
 computer.ram.store()
 
 
-"""
