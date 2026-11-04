@@ -23,7 +23,8 @@ we need to pass the corresponding value during the object creation of the class.
 #     self.name = name
 #     self.age = age
 
-# p1 = Person("Emil", 36)
+
+# p1 = Person("raj", 36)
 # print(p1.name)
 # print(p1.age)
 
@@ -46,7 +47,8 @@ class Person:
 p1 = Person("Nagar", 25)
 p1.greet()
 
-
+p2= Person("Patel",35)
+p2.greet();
 
 #===================================================
 
