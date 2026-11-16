@@ -15,6 +15,7 @@ student_id = {112, 114, 116, 118, 115}
 vowel_letters = {'a', 'e', 'i', 'o', 'u'}
 
 # create a set of mixed data types
+
 mixed_set = {'Hello', 101, -2, 'Bye'}
 
 Create an Empty Set in Python
@@ -24,6 +25,14 @@ empty_set = set()
 # create an empty dictionary
 empty_dictionary = { }
 
+
+
+Note : only unique value , { } , unordered / unindexing
+
+a=[5,6,7]  a[0]  =>5  
+a=(5,6,7)  a[0]  =>5
+a={5,6,7}  a[0]  => error  
+  
 """
 
 

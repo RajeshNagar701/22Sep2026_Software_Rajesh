@@ -37,7 +37,7 @@ __ prefix:  example : __age  : now we can't access out of class
 class Person:
   def __init__(self, name, age):
     self.name = name
-    self.__age = age
+    self.__age = age    #private 
 
   def get_age(self):
     return self.__age
